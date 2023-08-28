@@ -21,6 +21,7 @@ nav{
     position: fixed;
     height: 10vh;
     width: 100%;
+    z-index: 5;
 }
 header {
     height: 10vh;
@@ -82,41 +83,61 @@ header {
 }
 main{
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
     height: 80vh;
     background-color: var(--light);
+    
 }
 .container{
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
     align-content: center;
-    gap: 50px;
-    align-items: center;
+    gap: 5%;
+    width: 80%;
+    height: 100vh;
 }
 .container_descrip{
+    position:relative;
+    top: 0vh;
+    left: 1%;
     width: 400px;
     min-height:  300px;
+    background-color:white;
+    border: 2px solid var(--pink_cream);
+    border-radius:10px ;
+    padding: 10px;
 }
 .descrip_title{
     color: var(--red);
 }
-.descrip  {
+.descrip {
     color: rgb(60, 16, 16);
     font-size: 20px;
 }
 .container_porta{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    text-align: center;
+    position: relative;
+    top: 10%;
     width: 400px;
-}
-.porta_ul{
-    list-style:circle;
+    height: 200px;
+    border: 2px solid var(--pink_cream);
+    border-radius: 10px;
+    background-color: white;
 }
 .porta_title{
-    color: rgb(132, 49, 49);
+    color: var(--red);
+}
+.porta_ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 10px;
 }
 .porta_li{
     color: black;
@@ -128,24 +149,30 @@ main{
     transition: 500ms;
     color: rgb(132, 49, 49);
 }
-article{
-    min-height: 250px;
-}
-.article_title{
+.porta_title{
     color: var(--red);
 }
-.article_ul {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    list-style: none;
-    padding: 10px;
+.article{
+    margin-top: 50px;
+    position: relative;
+    top: 5%;
+    border: 2px solid var(--pink_cream);
+    padding: 15px 25px;
+    border-radius: 10px;
+    width: 350px;
+    height: 100px;
 }
-
+.article_ul{
+    list-style:circle;
+}
+.article_title{
+    color: rgb(132, 49, 49);
+}
 footer{
     background-color:var(--pink_cream);
-    height: 20vh;
+    height: max-content;
     padding-top: 20px;
+    z-index: 5;
 }
 .footer_title{
     color: var(--light);
@@ -165,4 +192,8 @@ footer{
     gap: 5px;
     color: var(--light);
 }
-
+@media (min-width:700px){
+    main{
+    width: 80%;
+    }
+}
