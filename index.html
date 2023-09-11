@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,55 +11,73 @@
     <!-- Iconos -->
     <script src="https://kit.fontawesome.com/ef6c750bfc.js" crossorigin="anonymous"></script>
     <title>Portafolio </title>
+
 </head>
 <body>
-    <nav class="nav">
+    <nav class="nav_container">
         <ul class="nav_ul">
             <li class="nav_item">Home</li>
             <li class="nav_item">Portafolio</li>
             <li class="nav_item">Contact</li>
         </ul>
     </nav>
-    <header class="header">
-        
+    <header>
     </header>
-    
-    <main class="container">
-        <section class="container_descrip">
-            <h1 class="descrip_title">Bienvenidos</h1>
-            <p class="descrip">Hola, mi nombre es Felix Cabrera Bernaola me considero un programador junior.
-                soy una persona proactiva y apasionada por la tecnología, 
-                siempre buscando mantenerme al día con las últimas tendencias
-                y herramientas en el campo de la programación. Estoy seguro de
-                que puedo aportar mi conocimiento y habilidades en su empresa,
-                y contribuir al éxito de sus proyectos.
+    <main>
+        <section class="container_description">
+            <div class="description">
+            <h1 class="description_title">Bienvenidos</h1>
+            <p class="description_p">Hola, mi nombre es Felix Cabrera Bernaola me considero un programador junior.
+            soy una persona proactiva y apasionada por la tecnología, 
+            siempre buscando mantenerme al día con las últimas tendencias
+            y herramientas en el campo de la programación. Estoy seguro de
+            que puedo aportar mi conocimiento y habilidades en su empresa,
+            y contribuir al éxito de sus proyectos.
             </p>
+            </div>
+            <img class="description_img" src="./assets/img/jugador.png" alt="">
         </section>
         <section class="container_porta">
             <h2 class="porta_title">Conocimiento en:</h2>
             <ul class="porta_ul">
-                <li class="article_li"><i class="fa-brands fa-github item"></i>GitHut</li>
-                <li class="article_li"><i class="fa-brands fa-html5 item"></i>Html</liclas>
-                <li class="article_li"><i class="fa-brands fa-css3-alt item"></i>Css</li>
-                <li class="article_li"><i class="fa-brands fa-js item"></i>Js</li>
-                <li class="article_li"><i class="fa-brands fa-react item"></i>React</li>
+                <li class="porta_li"><i class="fa-brands fa-github item"></i>GitHut</li>
+                <li class="porta_li"><i class="fa-brands fa-html5 item"></i>Html</liclas>
+                <li class="porta_li"><i class="fa-brands fa-css3-alt item"></i>Css</li>
+                <li class="porta_li"><i class="fa-brands fa-js item"></i>Js</li>
+                <li class="porta_li"><i class="fa-brands fa-react item"></i>React</li>
             </ul>
         </section>
         <article class="article">
+            <div class="article_div">
             <h2 class="article_title">Portafolio</h2>
             <ul class="article_ul">
-                <li><a href="https://guillermo-academlo.netlify.app/" target="_blank" class="porta_li">Carrito de compras</a></li>
-                <li><a href="https://entregable1-guillermo.netlify.app/" target="_blank" class="porta_li">Galletas de la fortuna</a></li>
+                <li>
+                    <a href="https://guillermo-academlo.netlify.app/" target="_blank" class="porta_li">
+                        Carrito de compras <img class="article_img" src="./assets/img/carrito.png" alt="">
+                    </a>
+                </li>
+                <li><a href="https://entregable1-guillermo.netlify.app/" target="_blank" class="porta_li">
+                    Galletas de la fortuna <img class="article_img" src="./assets/img/Galleta.PNG" alt="">
+                </a></li>
+                <li><a href="https://entregable2-guillermo.netlify.app/" target="_blank" class="porta_li">
+                    Web del clima <img class="article_img" src="./assets/img/Clima.PNG" alt="">
+                </a></li>
+                <li><a href="https://entregable3-guillermo.netlify.app/" target="_blank" class="porta_li">
+                    Morty <img class="article_img" src="./assets/img/Morty.PNG" alt="">
+                </a></li>
             </ul>
+            </div>
         </article>
     </main>
     <footer>
+        <div class="container_footer">
         <h2 class="footer_title">Contact :</h2>
             <ul class="footer_ul">
                 <li><i class="fa-solid fa-envelope item"></i></li>
                 <li><i class="fa-brands fa-linkedin item"></i></li>
                 <li><i class="fa-solid fa-phone item"></i></li>
             </ul>
+        </div>
     </footer>    
 </body>
 </html>
