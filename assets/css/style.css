@@ -6,10 +6,7 @@
     padding: 0;
 }
 :root {
-    --pink_cream: #b05454;
-    --red: rgb(142, 70, 70);
     --green: #286f6c;
-    --grey: #adadad;
     --light: #f9f5f2;
 }
 body{
@@ -41,8 +38,12 @@ body{
     cursor: pointer;
 }
 .nav_item:hover{
-    background-color: aqua;
+    background-color: #c46767;
     transform: scale(1.1);
+}
+.nav_a{
+    color: var(--light);
+    text-decoration: none;
 }
 .container_description{
     display: flex;
@@ -78,6 +79,12 @@ body{
     flex-direction: column;
     align-items: center;
     gap: 0.5em;
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+}
+.porta_li:hover{
+    transform: scale(1.05);
 }
 .item{
     font-size: 1.5em;
